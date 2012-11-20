@@ -60,11 +60,10 @@ public class Recibir implements Runnable {
                 }
                 fos.close();
 
-                HiloReplicador hiloReplicador;
+              
 
                 // OJO EL 1200 ES EL PUERTO DE ENVIAR, EL DE ESCUCHA SE ESTA USANDO POR ARGUMENTO
-                hiloReplicador = new HiloReplicador(Datos.getIp_vecino(), Datos.getPuerto_entrada(), Datos.getPuerto_salida(), archivo, folder.getName());
-                hiloReplicador.start();
+          
 //
                 //}
 

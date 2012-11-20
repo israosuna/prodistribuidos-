@@ -39,9 +39,8 @@ public class XMLnodos {
                 Element idnodo = e.getChild("id");
                 Element ip = e.getChild("ip");
                 Element puerto_entrada = e.getChild("puerto_entrada");
-                Element puerto_salida = e.getChild("puerto_salida");
               //  System.out.println(ip.getText());
-                Datos.setArgumentos(ip.getText(), Integer.valueOf(puerto_entrada.getText()), Integer.valueOf(puerto_salida.getText()),Integer.valueOf(idnodo.getText()));
+                Datos.setArgumentos(ip.getText(), Integer.valueOf(puerto_entrada.getText()),Integer.valueOf(idnodo.getText()));
                 break;
            }
            else{

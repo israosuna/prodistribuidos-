@@ -4,12 +4,10 @@
      <id>0</id>
     <ip>172.16.64.105</ip>
     <puerto_entrada>11000</puerto_entrada>
-    <puerto_salida>12000</puerto_salida>
   </nodo>
   <nodo>
       <id>1</id>
     <ip>172.16.66.174</ip>
     <puerto_entrada>12000</puerto_entrada>
-    <puerto_salida>11000</puerto_salida>
   </nodo>
 </nodos>
