@@ -12,11 +12,5 @@
     <puerto_entrada>11000</puerto_entrada>
     <puerto_salida>13000</puerto_salida>
   </nodo>
-  <nodo>
-      <id>2</id>
-    <ip>172.16.67.191</ip>
-    <puerto_entrada>11000</puerto_entrada>
-    <puerto_salida>14000</puerto_salida>
-  </nodo>
 </nodos>
 
