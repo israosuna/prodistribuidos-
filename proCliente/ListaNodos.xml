@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodos>
+  <nodo>
+     <id>0</id>
+    <ip>172.16.64.105</ip>
+    <puerto_entrada>11000</puerto_entrada>
+    <puerto_salida>12000</puerto_salida>
+  </nodo>
+  <nodo>
+      <id>1</id>
+    <ip>172.16.66.174</ip>
+    <puerto_entrada>11000</puerto_entrada>
+    <puerto_salida>13000</puerto_salida>
+  </nodo>
+  <nodo>
+      <id>2</id>
+    <ip>172.16.67.191</ip>
+    <puerto_entrada>11000</puerto_entrada>
+    <puerto_salida>14000</puerto_salida>
+  </nodo>
+</nodos>
+
