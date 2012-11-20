@@ -16,14 +16,15 @@ import java.util.ArrayList;
 public class HiloReplicador extends Thread {
 
     private String ip_nodo_siguiente;
-   
+    private int puerto_salida;
     private int puerto_entrada;
     private File archivo;
     
     private String usuario;
 
-    public HiloReplicador(String ip_nodo_siguiente, int puerto_entrada, File archivo, String user) {
+    public HiloReplicador(String ip_nodo_siguiente, int puerto_entrada, int puerto_salida, File archivo, String user) {
         this.ip_nodo_siguiente = ip_nodo_siguiente;
+        this.puerto_salida = puerto_salida;
         this.puerto_entrada = puerto_entrada;
         this.archivo = archivo;
         this.usuario = user;
@@ -39,7 +40,7 @@ public class HiloReplicador extends Thread {
         try {
 
             
-            Socket socket = new Socket(this.ip_nodo_siguiente, this.puerto_entrada);
+            Socket socket = new Socket(this.ip_nodo_siguiente, this.puerto_salida);
             //DataInputStream servicio = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
             DataOutputStream servicioSocket = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
             //write file name

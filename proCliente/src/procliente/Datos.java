@@ -32,8 +32,11 @@ public class Datos {
     public static void setArgumentos(String ip_vecinos, int puerto_salidas, int id_nodos)   
     {
          Datos.ip_vecino=ip_vecinos;
+         
          Datos.puerto_salida=puerto_salidas;
          Datos.id_nodo=id_nodos;
+         
+     
        
     }
 
