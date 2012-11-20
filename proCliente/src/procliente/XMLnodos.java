@@ -23,8 +23,9 @@ public class XMLnodos {
     
 
     public void cargaArchivos(int index) {
-        int cant =0;
+        
         try {
+            int cant =0;
             SAXBuilder builder = new SAXBuilder(false);
             //System.out.println(usuario);
             Document doc = builder.build("ListaNodos.xml");
@@ -41,12 +42,16 @@ public class XMLnodos {
                 Element puerto_salida = e.getChild("puerto_salida");
               //  System.out.println(ip.getText());
                 Datos.setArgumentos(ip.getText(), Integer.valueOf(puerto_entrada.getText()), Integer.valueOf(puerto_salida.getText()),Integer.valueOf(idnodo.getText()));
-
+                break;
            }
            else{
-           cant++;
+               
+               System.out.println("cai en else");
            }
+            k.next();
+            cant++;
             }
+           
         } catch (FileNotFoundException F) {
             System.out.println("Archivo XML no encontrado");
         } catch (Exception e) {

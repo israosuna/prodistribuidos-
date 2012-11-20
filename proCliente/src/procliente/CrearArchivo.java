@@ -199,8 +199,8 @@ public final class CrearArchivo extends javax.swing.JFrame {
                 xmlnodo.cargaArchivos(i);
                 HiloReplicador hiloReplicador;
                 // OJO EL 1200 ES EL PUERTO DE ENVIAR, EL DE ESCUCHA SE ESTA USANDO POR ARGUMENTO
-                hiloReplicador = new HiloReplicador(Datos.getIp_vecino(), Datos.getPuerto_entrada(), Datos.getPuerto_salida(), archivo, this.carpetausuario);
-                hiloReplicador.start();
+                hiloReplicador = new HiloReplicador(Datos.getIp_vecino(), Datos.getPuerto_salida(),Datos.getPuerto_entrada(), archivo, this.carpetausuario);
+                 hiloReplicador.start();
 
 
             }
